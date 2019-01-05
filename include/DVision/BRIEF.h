@@ -32,7 +32,7 @@
 #include <opencv2/core/core.hpp>
 #include <opencv2/features2d/features2d.hpp>
 #include <vector>
-#include <boost/dynamic_bitset.hpp>
+#include <bitset>
 
 namespace DVision {
 
@@ -41,8 +41,9 @@ class BRIEF
 {
 public:
 
+  static const int L = 256;
   /// Bitset type
-  typedef boost::dynamic_bitset<> bitset;
+  typedef std::bitset<L> bitset;
 
   /// Type of pairs
   enum Type

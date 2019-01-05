@@ -84,7 +84,7 @@ void BRIEF::compute(const cv::Mat &image,
   dit = descriptors.begin();
   for(kit = points.begin(); kit != points.end(); ++kit, ++dit)
   {
-    dit->resize(m_bit_length);
+    //dit->resize(m_bit_length);
     dit->reset();
 
     for(unsigned int i = 0; i < m_x1.size(); ++i)
